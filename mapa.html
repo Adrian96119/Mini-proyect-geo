@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56470af638ab4e369939e82bb2eb5cd1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_56470af638ab4e369939e82bb2eb5cd1" ></div>
+        
+</body>
+<script>    
+    
+            var map_56470af638ab4e369939e82bb2eb5cd1 = L.map(
+                "map_56470af638ab4e369939e82bb2eb5cd1",
+                {
+                    center: [47.603122, -122.333253],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2da084282424423ebf0cd425189c66ab = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var circle_c2c39f96de1443dfa95033f5d0ae003e = L.circle(
+                [47.603122, -122.333253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var feature_group_271b551bd489423dbe6908d9f47f5f86 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_ac46a12a38b444bf9be5053c103f1b66 = L.marker(
+                [47.603122, -122.333253],
+                {}
+            ).addTo(feature_group_271b551bd489423dbe6908d9f47f5f86);
+        
+    
+            var marker_84acfe7b09d94a9487ff814b6f291ac9 = L.marker(
+                [47.603122, -122.333253],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_93b6300fdab24731b2e2a18e01c6ae82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84acfe7b09d94a9487ff814b6f291ac9.setIcon(icon_93b6300fdab24731b2e2a18e01c6ae82);
+        
+    
+        var popup_b1e666e90b0b4e63a2f764ae854f7738 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ec76d5429c44f21a2082b1ed7fa8993 = $(`<div id="html_4ec76d5429c44f21a2082b1ed7fa8993" style="width: 100.0%; height: 100.0%;">Starbucks</div>`)[0];
+            popup_b1e666e90b0b4e63a2f764ae854f7738.setContent(html_4ec76d5429c44f21a2082b1ed7fa8993);
+        
+
+        marker_84acfe7b09d94a9487ff814b6f291ac9.bindPopup(popup_b1e666e90b0b4e63a2f764ae854f7738)
+        ;
+
+        
+    
+    
+            var marker_0dae72a3a5ad46eea2615b3b08da737d = L.marker(
+                [47.607718, -122.334751],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_0901467984864f6d857a26a9aba8450a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0dae72a3a5ad46eea2615b3b08da737d.setIcon(icon_0901467984864f6d857a26a9aba8450a);
+        
+    
+        var popup_28ea53f7d96c43ec8e973f0da632ce87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e741dffac244414d860c95cd95c4dcfb = $(`<div id="html_e741dffac244414d860c95cd95c4dcfb" style="width: 100.0%; height: 100.0%;">escuela secundaria Apex Learning Virtual School</div>`)[0];
+            popup_28ea53f7d96c43ec8e973f0da632ce87.setContent(html_e741dffac244414d860c95cd95c4dcfb);
+        
+
+        marker_0dae72a3a5ad46eea2615b3b08da737d.bindPopup(popup_28ea53f7d96c43ec8e973f0da632ce87)
+        ;
+
+        
+    
+    
+            var marker_9324c43b297f41ed95dba0933794c80c = L.marker(
+                [47.6011701, -122.3155688],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_9518e8b8ea3f494ea872eb1ebd6c96a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9324c43b297f41ed95dba0933794c80c.setIcon(icon_9518e8b8ea3f494ea872eb1ebd6c96a0);
+        
+    
+        var popup_08dd83f42f8046d68f88835c9e1448c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e18ece6057473b8d420c032ddf38a6 = $(`<div id="html_a8e18ece6057473b8d420c032ddf38a6" style="width: 100.0%; height: 100.0%;">escuela primaria Bailey Gatzert Elementary School</div>`)[0];
+            popup_08dd83f42f8046d68f88835c9e1448c8.setContent(html_a8e18ece6057473b8d420c032ddf38a6);
+        
+
+        marker_9324c43b297f41ed95dba0933794c80c.bindPopup(popup_08dd83f42f8046d68f88835c9e1448c8)
+        ;
+
+        
+    
+    
+            var marker_51d09d93b552431494783df40d1606b2 = L.marker(
+                [47.6015323, -122.3333255],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_c3d26ed971bf45d8b7d8a3434b3db821 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51d09d93b552431494783df40d1606b2.setIcon(icon_c3d26ed971bf45d8b7d8a3434b3db821);
+        
+    
+        var popup_26ff4722386143d98168a3847bd82b8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b4aa8b564c04410a8d0f1ad461e1b20 = $(`<div id="html_0b4aa8b564c04410a8d0f1ad461e1b20" style="width: 100.0%; height: 100.0%;">Trinity,club nocturno</div>`)[0];
+            popup_26ff4722386143d98168a3847bd82b8f.setContent(html_0b4aa8b564c04410a8d0f1ad461e1b20);
+        
+
+        marker_51d09d93b552431494783df40d1606b2.bindPopup(popup_26ff4722386143d98168a3847bd82b8f)
+        ;
+
+        
+    
+    
+            var marker_743c75da42e94a08adc8afaf38ebc4f6 = L.marker(
+                [47.60103050000001, -122.3331875],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_8a43c488f62f482fb202fbec84377b4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_743c75da42e94a08adc8afaf38ebc4f6.setIcon(icon_8a43c488f62f482fb202fbec84377b4b);
+        
+    
+        var popup_325e9527ba5f4a98827e980e7cb33711 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_380e852a604f42aba340e518211590a3 = $(`<div id="html_380e852a604f42aba340e518211590a3" style="width: 100.0%; height: 100.0%;">Box House</div>`)[0];
+            popup_325e9527ba5f4a98827e980e7cb33711.setContent(html_380e852a604f42aba340e518211590a3);
+        
+
+        marker_743c75da42e94a08adc8afaf38ebc4f6.bindPopup(popup_325e9527ba5f4a98827e980e7cb33711)
+        ;
+
+        
+    
+    
+            var marker_8dc4a3defa024bce8a2bce82b71cac34 = L.marker(
+                [47.60352899999999, -122.3355838],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_66fa3e4944a444498b1e254d19e9fdf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8dc4a3defa024bce8a2bce82b71cac34.setIcon(icon_66fa3e4944a444498b1e254d19e9fdf3);
+        
+    
+        var popup_a273a7cc8c814d3dadff51d08609421f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5112f6d74ca649e7812d673eec63f08f = $(`<div id="html_5112f6d74ca649e7812d673eec63f08f" style="width: 100.0%; height: 100.0%;">Agencia de viajes Marketplace for safari tours</div>`)[0];
+            popup_a273a7cc8c814d3dadff51d08609421f.setContent(html_5112f6d74ca649e7812d673eec63f08f);
+        
+
+        marker_8dc4a3defa024bce8a2bce82b71cac34.bindPopup(popup_a273a7cc8c814d3dadff51d08609421f)
+        ;
+
+        
+    
+    
+            var marker_d73de1ae08dc4fd7b98bf1dda84a1c01 = L.marker(
+                [47.6061317, -122.3338615],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_213e9a97f5b343e09915c047a48372bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d73de1ae08dc4fd7b98bf1dda84a1c01.setIcon(icon_213e9a97f5b343e09915c047a48372bb);
+        
+    
+        var popup_914ea268f608425eb12adc7ea3cec20a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45276bec442a47e0ba06724cbd50aa05 = $(`<div id="html_45276bec442a47e0ba06724cbd50aa05" style="width: 100.0%; height: 100.0%;">Meixi Travel Agency</div>`)[0];
+            popup_914ea268f608425eb12adc7ea3cec20a.setContent(html_45276bec442a47e0ba06724cbd50aa05);
+        
+
+        marker_d73de1ae08dc4fd7b98bf1dda84a1c01.bindPopup(popup_914ea268f608425eb12adc7ea3cec20a)
+        ;
+
+        
+    
+    
+            var marker_885fe0a7a7834adbb669474314d1f4e2 = L.marker(
+                [47.6015323, -122.3333255],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_e00d5c54f373400486e309388d051a84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_885fe0a7a7834adbb669474314d1f4e2.setIcon(icon_e00d5c54f373400486e309388d051a84);
+        
+    
+        var popup_6be37f4620744d63857c7fdcfeca02f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0593a18eae704c8c84cf64540ded544f = $(`<div id="html_0593a18eae704c8c84cf64540ded544f" style="width: 100.0%; height: 100.0%;">Jale Chane</div>`)[0];
+            popup_6be37f4620744d63857c7fdcfeca02f0.setContent(html_0593a18eae704c8c84cf64540ded544f);
+        
+
+        marker_885fe0a7a7834adbb669474314d1f4e2.bindPopup(popup_6be37f4620744d63857c7fdcfeca02f0)
+        ;
+
+        
+    
+    
+            var marker_a5fa9ed257bf4490806f05cfa4c3cea8 = L.marker(
+                [47.60103050000001, -122.3331875],
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var icon_685a373936a74f4f92b3143413e74b31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a5fa9ed257bf4490806f05cfa4c3cea8.setIcon(icon_685a373936a74f4f92b3143413e74b31);
+        
+    
+        var popup_52566b74a1d44219b14b779d6caf6400 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdb47d959ebe49238a4c828b399179df = $(`<div id="html_fdb47d959ebe49238a4c828b399179df" style="width: 100.0%; height: 100.0%;">Alegre Salon</div>`)[0];
+            popup_52566b74a1d44219b14b779d6caf6400.setContent(html_fdb47d959ebe49238a4c828b399179df);
+        
+
+        marker_a5fa9ed257bf4490806f05cfa4c3cea8.bindPopup(popup_52566b74a1d44219b14b779d6caf6400)
+        ;
+
+        
+    
+    
+            var feature_group_8b829b1fac7249c69ea13fc456f2a7f2 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_d3f3ac3d775144458fceec72416fc35b = L.marker(
+                [47.6015323, -122.3333255],
+                {}
+            ).addTo(feature_group_8b829b1fac7249c69ea13fc456f2a7f2);
+        
+    
+            var feature_group_d04e0c97c47b4932ada706341a740259 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_ca893a0ca5d34900b7c290cc955bd5bd = L.marker(
+                [47.60103050000001, -122.3331875],
+                {}
+            ).addTo(feature_group_d04e0c97c47b4932ada706341a740259);
+        
+    
+            var feature_group_60a1a9cda8ce405698e797e33dccfa51 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_cc303972daa747dfbef0c8be54e0c564 = L.marker(
+                [47.603122, -122.333253],
+                {}
+            ).addTo(feature_group_60a1a9cda8ce405698e797e33dccfa51);
+        
+    
+            var feature_group_3af8a1f54c24439890c9be408de325b2 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_527f2ed249bd4257b5610611a3ea5305 = L.marker(
+                [47.6011701, -122.3155688],
+                {}
+            ).addTo(feature_group_3af8a1f54c24439890c9be408de325b2);
+        
+    
+            var feature_group_64191cbba51a4944bbc94a5c681639b1 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_c3a8de4ac61d4002b4e2a3e617a8a1e8 = L.marker(
+                [47.607718, -122.334751],
+                {}
+            ).addTo(feature_group_64191cbba51a4944bbc94a5c681639b1);
+        
+    
+            var feature_group_df19edf95e3e4a74b9a6947c0491e51e = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_4e13b0cb7f3c4e5c82df1690749beb2c = L.marker(
+                [47.6015323, -122.3333255],
+                {}
+            ).addTo(feature_group_df19edf95e3e4a74b9a6947c0491e51e);
+        
+    
+            var feature_group_c770a253a09649c0b36912af7465fbf7 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_23197e39a0d243fe9ddcde21982943b0 = L.marker(
+                [47.60103050000001, -122.3331875],
+                {}
+            ).addTo(feature_group_c770a253a09649c0b36912af7465fbf7);
+        
+    
+            var feature_group_662d1b92713f49879437c4fbbe0852b3 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_ae604a52a41541dd822971188046a808 = L.marker(
+                [47.60352899999999, -122.3355838],
+                {}
+            ).addTo(feature_group_662d1b92713f49879437c4fbbe0852b3);
+        
+    
+            var feature_group_f9655a3fae674b29a596ab911892c4e7 = L.featureGroup(
+                {}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+    
+            var marker_5648870689084067b74b79681cfa1e96 = L.marker(
+                [47.6061317, -122.3338615],
+                {}
+            ).addTo(feature_group_f9655a3fae674b29a596ab911892c4e7);
+        
+    
+            var layer_control_24d2895b79eb4a1980a0054fcbc5265a = {
+                base_layers : {
+                    "stamentoner" : tile_layer_2da084282424423ebf0cd425189c66ab,
+                },
+                overlays :  {
+                    "Office" : feature_group_271b551bd489423dbe6908d9f47f5f86,
+                    "peluqueria Jale Chane" : feature_group_8b829b1fac7249c69ea13fc456f2a7f2,
+                    "peluqueria Alegre salon" : feature_group_d04e0c97c47b4932ada706341a740259,
+                    "Starbucks" : feature_group_60a1a9cda8ce405698e797e33dccfa51,
+                    "escuela primaria Bailey Gatzert Elementary School" : feature_group_3af8a1f54c24439890c9be408de325b2,
+                    "escuela secundaria Apex Learning Virtual School" : feature_group_64191cbba51a4944bbc94a5c681639b1,
+                    "club Trinity" : feature_group_df19edf95e3e4a74b9a6947c0491e51e,
+                    "club Box House" : feature_group_c770a253a09649c0b36912af7465fbf7,
+                    "Agencia de viajes Marketplace for safari tours" : feature_group_662d1b92713f49879437c4fbbe0852b3,
+                    "Meixi Travel Agency" : feature_group_f9655a3fae674b29a596ab911892c4e7,
+                },
+            };
+            L.control.layers(
+                layer_control_24d2895b79eb4a1980a0054fcbc5265a.base_layers,
+                layer_control_24d2895b79eb4a1980a0054fcbc5265a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_56470af638ab4e369939e82bb2eb5cd1);
+        
+</script>
